@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>title</title>
+    <style>
+       body{
+           foint-family: 'Times New Roman', Times,serif
+       }
+       .container{
+           width: 450px;
+           margin: 50px auto;
+           border: 2px solid blue;
+           padding: 20px;
+           boder-radius: 10px;
+       }
+       .container h2{
+           text-align: center;
+           margin: 20px;
+       }
+       .section{
+           border: 2px solid black;
+           padding: 10px;
+           margin-bottom: 20px;
+           border-radius: 5px;
+       }
+       .section legend{
+           font-weight: bold;
+       }
+       .form-group{
+           margin-bottom: 15px;
+           display: flex;
+           align-items: center;
+       }
+       .form-group label{
+           width: 120px;
+           margin-right: 10px;
+       }
+       .form-group input, .form-group select, .form-group textarea{
+           width: calc(100%-130px);
+           padding: 5px;
+       }
+       .form-group input [type="radio"]{
+           width: auto;
+       }
+       .form-actions{
+           text-align: center;
+       }
+       .form-actions button{
+           padding: 5px 10px;
+           margin: 0 10px;
+       }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h2>ĐĂNG KÝ THÀNH VIÊN</h2>
+
+    <form action="#" method="post">
+    <fieldset class="section">
+        <legend>THÔNG TIN CÁ NHÂN</legend>
+        <div class="form-group">
+            <label for="name">Họ và tên:</label>
+            <input type="text" id="name" name="name">
+        </div>
+
+        <div class="form-group">
+            <label for="name">Ngày Sinh:</label>
+            <select name="day">
+                <option value="ngay1">01</option>
+                <option value="ngay2">02</option>
+                <option value="ngay3">03</option>
+            </select>
+            Tháng
+            <select name="month">
+                <option value="thang1">01</option>
+                <option value="thang2">02</option>
+                <option value="thang3">03</option>
+            </select>
+            Năm
+                <input type="text" name="year" size="5">
+        </div>
+
+        <div class="form-group">
+            <label for="name">Giới Tính:</label>
+                <input type="radio" name="gioitinh" id="nam"> Nam
+                <input type="radio" name="gioitinh" id="nu"> Nữ
+        </div>
+
+        <div class="form-group">
+            <label for="name">Địa Chỉ:</label>
+            <textarea colspan="10"></textarea>
+
+        </div>
+
+        <div class="form-group">
+            <label for="name">Điện Thoại:</label>
+            <input type="text" name="number" size="21">
+
+        </div>
+
+        <div class="form-group">
+            <label for="name">Email:</label>
+            <input type="text" name="email" size="21">
+        </div>
+    </fieldset>
+    </form>
+
+    <form action="#" method="post">
+        <fieldset class="section">
+            <legend>THÔNG TIN ĐĂNG NHẬP</legend>
+            <div class="form-group">
+                <label for="name">Tên Đăng Nhập:</label>
+                <input type="text" id="name" name="name" size="30">
+            </div>
+
+        
+            <div class="form-group">
+                <label for="name">Mật Khẩu:</label>
+                <input type="text" id="pwd" name="pwd" size="30">
+            </div>
+
+            <div class="form-group">
+                <label for="name">Nhập lại mật khẩu:</label>
+                <input type="text" id="pwd" name="pwd" size="30">
+            </div>
+        </fieldset>
+    </form>
+
+    <div class="form-actions">
+        <input type="submit" value="Đăng ký">
+        <input type="submit" value="Hủy">
+    </div>
+</body>
+</html>

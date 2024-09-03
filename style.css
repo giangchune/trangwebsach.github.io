@@ -1,0 +1,9 @@
+.cointainer{
+    gap:30px;
+    display:flex;
+}
+
+.moneys{
+    display:flex;
+    gap:45px;
+}
